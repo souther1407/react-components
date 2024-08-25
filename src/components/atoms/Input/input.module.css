@@ -1,0 +1,14 @@
+.light.primary.container,
+.dark.primary.container {
+}
+
+.light.primary .input {
+  padding: 8px;
+  border-bottom: 1px solid var(--secondary);
+}
+
+.dark.primary .input {
+  padding: 8px;
+  border-bottom: 1px solid var(--secondary-light);
+  color: var(--text-light);
+}

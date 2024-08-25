@@ -1,0 +1,159 @@
+.primary.iconTextButton,
+.secondary.iconTextButton,
+.primary-dark.iconTextButton {
+  display: flex;
+  outline: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  padding: 10px 24px;
+  border-radius: 12px;
+  background-color: transparent;
+  transition: background 0.2s ease-in;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  gap: 16px;
+}
+
+/* Primary */
+.primary.iconTextButton.full {
+  background-color: var(--primary);
+  color: var(--dark-black);
+  border-radius: 8px;
+}
+.primary.iconTextButton:disabled {
+  background-color: #2d4356;
+  cursor: auto;
+  color: var(--white);
+  cursor: no-drop;
+}
+.primary.iconTextButton:disabled:hover {
+}
+.primary.iconTextButton.full:hover {
+  background-color: var(--primary-dark);
+}
+
+.primary.iconTextButton.bordered:hover {
+}
+
+.primary.iconTextButton.bordered {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+/*primary rounded*/
+.primary-rounded.iconTextButton.full {
+  background-color: var(--primary);
+  color: var(--dark-black);
+  border-radius: 32px;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.primary-rounded.iconTextButton:disabled {
+  background-color: #2d4356;
+  cursor: auto;
+  color: var(--white);
+  cursor: no-drop;
+}
+.primary-rounded.iconTextButton:disabled:hover {
+}
+.primary-rounded.iconTextButton.full:hover {
+  background-color: var(--primary-dark);
+}
+
+.primary-rounded.iconTextButton.bordered:hover {
+}
+
+.primary-rounded.iconTextButton.bordered {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+/* Secondary */
+.secondary.iconTextButton {
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: transparent;
+  transition: all 0.3s ease-in;
+}
+
+.secondary.iconTextButton:hover {
+  background-color: var(--primary-transparent);
+}
+
+.secondary.iconTextButton > i {
+  color: var(--primary);
+}
+
+/* terciary */
+
+.terciary.iconTextButton {
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--black);
+  transition: all 0.3s ease-in;
+  display: flex;
+}
+
+/* bordered-primary */
+.bordered-primary.iconTextButton {
+  border-radius: 8px;
+  color: var(--primary);
+  background-color: transparent;
+  transition: all 0.3s ease-in;
+  border: 1px solid var(--primary-dark);
+}
+
+/* Secondary-dark */
+.secondary-dark.iconTextButton {
+  display: flex;
+  border: 1px solid var(--black);
+  padding: 10px 24px;
+  border-radius: 8px;
+  color: var(--black);
+  background-color: transparent;
+  transition: all 0.3s ease-in;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.secondary-dark.iconTextButton:hover {
+  background-color: var(--primary-transparent);
+}
+
+.secondary-dark.iconTextButton > i {
+  color: var(--primary);
+}
+.secondary-dark.iconTextButton.bordered {
+  border: 1px solid var(--black);
+  color: var(--black);
+}
+
+/*primary-dark*/
+.primary-dark.iconTextButton.full {
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 8px;
+}
+
+.primary-dark.iconTextButton:disabled {
+  background-color: #2d4356;
+  cursor: auto;
+  color: var(--white);
+  cursor: no-drop;
+}
+
+.primary-dark.iconTextButton:disabled:hover {
+}
+
+.primary-dark.iconTextButton.full:hover {
+  background-color: var(--black);
+}
+
+.primary-dark.iconTextButton.bordered {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}

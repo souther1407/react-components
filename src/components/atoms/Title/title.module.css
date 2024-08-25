@@ -1,0 +1,15 @@
+.light.normal {
+  color: var(--text-dark);
+}
+
+.dark.normal {
+  color: var(--text-light);
+}
+
+.light.primary {
+  color: var(--primary);
+}
+
+.dark.primary {
+  color: var(--primary-light);
+}
