@@ -37,6 +37,11 @@ input:focus {
   outline: none;
 }
 
+button {
+  border: none;
+  cursor: pointer;
+}
+
 html,
 body {
   font-size: 16px;

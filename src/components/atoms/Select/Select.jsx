@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "./select.module.css";
 import Icon from "../Icon/Icon";
 import Text from "../Text/Text";
-import IconButton from "../../molecules/IconButton/IconButton";
+
 const Select = ({
   elements = [],
   id,

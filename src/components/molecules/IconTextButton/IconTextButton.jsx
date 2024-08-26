@@ -2,27 +2,26 @@ import React from "react";
 import Text from "../../atoms/Text/Text";
 import styles from "./iconTextButton.module.css";
 import Icon from "../../atoms/Icon/Icon";
+import { useColorModeStore } from "../../../stores/useColorModeStore";
+
 const IconTextButton = ({
-  variant = "full",
+  variant = "primary",
   size = "auto",
-  textProps,
-  colorVariant = "primary",
   icon,
   onClick,
   children,
   ...otherProps
 }) => {
+  const mode = useColorModeStore((state) => state.mode);
   return (
     <button
       style={{ width: size }}
-      className={`${styles[colorVariant]} ${styles.iconTextButton} ${styles[variant]}`}
+      className={`${styles[mode]} ${styles.iconTextButton} ${styles[variant]}`}
       onClick={onClick}
       {...otherProps}
     >
-      {icon && <Icon size={"1.5rem"} type={icon} />}
-      <Text {...textProps} color="inherit">
-        {children}
-      </Text>
+      {icon && <Icon size={"1rem"} type={icon} />}
+      <p>{children}</p>
     </button>
   );
 };

@@ -10,7 +10,7 @@
 .radio {
   position: relative;
   display: flex;
-  outline: 1px solid var(--white);
+  outline: 1px solid var(--background-dark);
   width: var(--radio-w);
   height: var(--radio-h);
   display: flex;
@@ -34,7 +34,7 @@
 }
 
 .checked {
-  background-color: var(--white);
+  background-color: var(--background-dark);
   width: calc(var(--radio-w) - 8px);
   height: calc(var(--radio-h) - 8px);
   border-radius: 50%;
